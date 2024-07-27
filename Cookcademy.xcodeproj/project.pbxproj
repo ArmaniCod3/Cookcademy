@@ -11,7 +11,18 @@
 		B9B106B32C53EA1D00CB953B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B106B22C53EA1D00CB953B /* ContentView.swift */; };
 		B9B106B52C53EA2000CB953B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B106B42C53EA2000CB953B /* Assets.xcassets */; };
 		B9B106B82C53EA2000CB953B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B106B72C53EA2000CB953B /* Preview Assets.xcassets */; };
+		B9B106BF2C53F1A300CB953B /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B106BE2C53F1A300CB953B /* Recipe.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9B106C82C54EE9500CB953B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B106A52C53EA1D00CB953B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B106AC2C53EA1D00CB953B;
+			remoteInfo = Cookcademy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B9B106AD2C53EA1D00CB953B /* Cookcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +30,19 @@
 		B9B106B22C53EA1D00CB953B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9B106B42C53EA2000CB953B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9B106B72C53EA2000CB953B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9B106BE2C53F1A300CB953B /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		B9B106C42C54EE9500CB953B /* CookcademyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookcademyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B9B106AA2C53EA1D00CB953B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B106C12C54EE9500CB953B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B9B106AD2C53EA1D00CB953B /* Cookcademy.app */,
+				B9B106C42C54EE9500CB953B /* CookcademyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			children = (
 				B9B106B02C53EA1D00CB953B /* CookcademyApp.swift */,
 				B9B106B22C53EA1D00CB953B /* ContentView.swift */,
+				B9B106BE2C53F1A300CB953B /* Recipe.swift */,
 				B9B106B42C53EA2000CB953B /* Assets.xcassets */,
 				B9B106B62C53EA2000CB953B /* Preview Content */,
 			);
@@ -87,6 +109,24 @@
 			productReference = B9B106AD2C53EA1D00CB953B /* Cookcademy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B9B106C32C54EE9500CB953B /* CookcademyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B106CC2C54EE9500CB953B /* Build configuration list for PBXNativeTarget "CookcademyTests" */;
+			buildPhases = (
+				B9B106C02C54EE9500CB953B /* Sources */,
+				B9B106C12C54EE9500CB953B /* Frameworks */,
+				B9B106C22C54EE9500CB953B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B106C92C54EE9500CB953B /* PBXTargetDependency */,
+			);
+			name = CookcademyTests;
+			productName = CookcademyTests;
+			productReference = B9B106C42C54EE9500CB953B /* CookcademyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +139,10 @@
 				TargetAttributes = {
 					B9B106AC2C53EA1D00CB953B = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					B9B106C32C54EE9500CB953B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B9B106AC2C53EA1D00CB953B;
 					};
 				};
 			};
@@ -116,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				B9B106AC2C53EA1D00CB953B /* Cookcademy */,
+				B9B106C32C54EE9500CB953B /* CookcademyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +175,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9B106C22C54EE9500CB953B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +189,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B106BF2C53F1A300CB953B /* Recipe.swift in Sources */,
 				B9B106B32C53EA1D00CB953B /* ContentView.swift in Sources */,
 				B9B106B12C53EA1D00CB953B /* CookcademyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9B106C02C54EE9500CB953B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9B106C92C54EE9500CB953B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B106AC2C53EA1D00CB953B /* Cookcademy */;
+			targetProxy = B9B106C82C54EE9500CB953B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B9B106B92C53EA2000CB953B /* Debug */ = {
@@ -320,6 +388,40 @@
 			};
 			name = Release;
 		};
+		B9B106CA2C54EE9500CB953B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "amani-white.CookcademyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cookcademy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cookcademy";
+			};
+			name = Debug;
+		};
+		B9B106CB2C54EE9500CB953B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "amani-white.CookcademyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cookcademy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cookcademy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +439,15 @@
 			buildConfigurations = (
 				B9B106BC2C53EA2000CB953B /* Debug */,
 				B9B106BD2C53EA2000CB953B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B106CC2C54EE9500CB953B /* Build configuration list for PBXNativeTarget "CookcademyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B106CA2C54EE9500CB953B /* Debug */,
+				B9B106CB2C54EE9500CB953B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
