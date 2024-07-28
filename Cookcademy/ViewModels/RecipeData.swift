@@ -8,5 +8,5 @@
 import Foundation
 
 class RecipeData: ObservableObject {
-    @Published var recipes = Recipe.testRecipes
+  @Published var recipes = Recipe.testRecipes
 }
