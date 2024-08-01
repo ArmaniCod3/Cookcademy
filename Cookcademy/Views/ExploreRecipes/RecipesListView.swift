@@ -49,10 +49,12 @@ struct RecipesListView: View {
                                 }
                             }
                             ToolbarItem(placement: .confirmationAction) {
-                                Button("Add") {
-                                    recipeData.recipes.append(newRecipe)
-                                    isPresenting = false
-                                }
+                                if newRecipe.isValid {
+                                   Button("Add") {
+                                     recipeData.recipes.append(newRecipe)
+                                     isPresenting = false
+                                   }
+                                 }
                             }
                         })
                         .navigationTitle("Add a New Recipe")
